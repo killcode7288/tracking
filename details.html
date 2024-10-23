@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Not Found</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #0e0e0e;
+            color: #e0e0e0;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 8rem;
+            color: #00ffcc;
+            text-shadow: 0px 0px 15px rgba(0, 255, 204, 0.8);
+            animation: glitch 1.5s infinite;
+        }
+
+        .error-message {
+            font-size: 1.5rem;
+            color: #f0f0f0;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Button Styles */
+        .btn-outline-light {
+            margin-top: 30px;
+            padding: 10px 20px;
+            border: 2px solid #00ffcc;
+            color: #00ffcc;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-light:hover {
+            background-color: #00ffcc;
+            color: #0e0e0e;
+        }
+
+        /* Floating Animation */
+        .floating {
+            position: relative;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        /* Glitch Effect */
+        @keyframes glitch {
+            0% {
+                text-shadow: 2px 2px #00ffcc, -2px -2px #f0f0f0;
+            }
+
+            20% {
+                text-shadow: -2px -2px #00ffcc, 2px 2px #f0f0f0;
+            }
+
+            40% {
+                text-shadow: 2px -2px #f0f0f0, -2px 2px #00ffcc;
+            }
+
+            60% {
+                text-shadow: -2px 2px #00ffcc, 2px -2px #f0f0f0;
+            }
+
+            100% {
+                text-shadow: 2px 2px #00ffcc, -2px -2px #f0f0f0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="text-center">
+        <h1 class="floating">404</h1>
+        <p class="error-message">Oops! The package you're looking for is pending.</p>
+        <a href="index.html" class="btn btn-outline-light">Go Back Home</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
